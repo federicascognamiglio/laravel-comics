@@ -20,6 +20,7 @@ ul {
     list-style: none;
     text-decoration: none;
     margin-bottom: 0;
+    padding: 0;
 }
 
 a {
@@ -38,6 +39,7 @@ a {
     --banner-height: 80px;
     --main-bg: #1c1c1c;
     --main-blue: #0c7cec;
+    --footer-banner-bg: #303030;
 }
 
 // COMMON
@@ -55,6 +57,18 @@ a {
 .col {
     width: calc((100% - 100px) / 6);
     margin-bottom: 10px;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
 }
 
 // Position
@@ -94,6 +108,14 @@ a {
     border-width: 0;
     color: #ffffff;
     margin: 0 auto;
+    display: block;
+}
+
+.outline-btn {
+    background-color: transparent;
+    border: 2px solid var(--main-blue);
+    color: #ffffff;
+    padding: 5px 20px;
     display: block;
 }
 
@@ -167,4 +189,37 @@ a {
 .banner img {
     height: 40px;
     margin-right: 10px;
+}
+
+// Footer
+footer {
+    color: #ffffff;
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.footer-text {
+    margin-right: 50px;
+    padding-top: 30px;
+}
+
+.footer-text li {
+    color: #afafaf;
+    font-size: .8rem;
+}
+
+.footer-banner {
+    background-color: var(--footer-banner-bg);
+    padding: 20px 0;
+}
+
+.footer-banner h6 {
+    color: var(--main-blue);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.footer-banner img {
+    width: 30px;
 }
