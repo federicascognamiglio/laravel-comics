@@ -16,10 +16,10 @@ $cards = config("comics")
         <div class="row">
             @foreach( $cards as $card)
             <div class="col">
-                <div class="card">
-                    <img src="{{ $card['thumb'] }}" alt="{{ $card['title'] }}">
-                    <h6>{{ $card['title'] }}</h6>
-                </div>
+               <x-card>
+                     <x-slot:thumb>{{ $card['thumb'] }}</x-slot>
+                     <x-slot:title>{{ $card['title'] }}</x-slot>
+               </x-card>
             </div>
             @endforeach
         </div>
