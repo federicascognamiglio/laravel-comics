@@ -6,3 +6,101 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+// Custom
+// RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    background-color: var(--main-bg);
+    height: 100vh;
+}
+
+// UTILITIES
+:root {
+    --header-height: 80px;
+    --hero-height: 25vh;
+    --main-bg: #1c1c1c;
+}
+
+// COMMON
+// Layout
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// Position
+.p-relative {
+    position: relative;
+}
+
+// Flex
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
+// SECTIONS
+// Header
+.navbar {
+    height: var(--header-height);
+    background-color: #ffffff;
+}
+
+.nav-logo {
+    height: 45px;
+}
+
+// Hero
+.hero-section {
+    height: var(--hero-height);
+    background-size: cover;
+    background-image: url('../img/jumbotron.jpg');
+}
+
+.section-tag {
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #0c7cec;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
