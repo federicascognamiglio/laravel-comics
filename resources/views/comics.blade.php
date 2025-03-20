@@ -26,5 +26,9 @@ $cards = config("comics")
         <button class="blue-btn">LOAD MORE</button>
     </section>
     <!-- /Cards -->
+
 </div>
+<!-- Banner -->
+ <x-banner></x-banner>
+<!-- /Banner -->
 @endsection

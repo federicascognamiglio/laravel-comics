@@ -35,6 +35,7 @@ a {
 :root {
     --header-height: 80px;
     --hero-height: 25vh;
+    --banner-height: 80px;
     --main-bg: #1c1c1c;
     --main-blue: #0c7cec;
 }
@@ -149,4 +150,21 @@ a {
 .card h6 {
     font-size: .8rem;
     color: #ffffff;
+}
+
+// Banner
+.banner {
+    background-color: var(--main-blue);
+    color: #ffffff;
+    height: var(--banner-height);
+    gap: 40px;
+}
+
+.banner h6 {
+    font-size: .8rem;
+}
+
+.banner img {
+    height: 40px;
+    margin-right: 10px;
 }
