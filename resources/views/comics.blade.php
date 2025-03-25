@@ -5,12 +5,8 @@ $cards = config("comics")
 @endphp
 
 @section('pageContent')
-<!-- Hero -->
-<section class="hero-section"></section>
-<!-- /Hero -->
 <div class="container p-relative">
     <span class="section-tag">CURRENT SERIES</span>
-    
     <!-- Cards -->
     <section class="card-section">
         <div class="row">
@@ -26,7 +22,6 @@ $cards = config("comics")
         <button class="blue-btn">LOAD MORE</button>
     </section>
     <!-- /Cards -->
-
 </div>
 <!-- Banner -->
  <x-banner></x-banner>

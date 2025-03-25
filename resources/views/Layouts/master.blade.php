@@ -22,6 +22,7 @@
     </header>
 
     <main class="main">
+        @include('Partials.hero')
         @yield('pageContent')
     </main>
 
